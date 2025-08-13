@@ -8,9 +8,10 @@ body {
     background-repeat: no-repeat;
     background-size: 150% 150%;
     min-height: 100vh;
+
 }
 
-body *{
+body * {
     font-family: "Inter",sans-serif;
     color:white;
 }
@@ -20,7 +21,6 @@ body *{
     max-width: 588px;
     margin:56px auto 0px;
     padding: 0 24px;
-    border:red solid 1px;
 
 }
 
@@ -28,11 +28,10 @@ body *{
 #profile{
     text-align: center;
     padding: 24px;
-    border:red solid 1px;
 
 }
 #profile p{
-    font-weight: 500;
+    font-weight: bold;
     line-height: 24px;
     margin-top: center;
     text-align: center;
@@ -51,21 +50,21 @@ body *{
     animation: pulse-glow 2.5s infinite ease-in-out;
 }
 #bio {
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: bold;
     line-height: 24px;
     margin-top: center;
     text-align: center;
-
 }
 
 ul {
-    border:red solid 1px;
 
     list-style: none;
     display: flex;
     flex-direction: column;
     gap:16px;
     padding: 24px 0;
+    
 }
 
 ul li a{
@@ -75,23 +74,48 @@ ul li a{
 
     padding: 16px;
     background:rgba(0, 169, 183, 0.7);
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 32px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
     transition: background 0.2s;
 }
 
 ul li a:hover{
     background: rgba(255, 255, 255, 0.1);
-    border:1.5px solid
+    border:1.5px solid;
+    animation: pulse-glow 2.5s infinite ease-in-out;
+
 }
 
-#social_media{
-    color:white;
+#social_media {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 24px;
+}
 
+#social_media a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+#social_media a:hover{
+    background: rgba(255, 255, 255, 0.1) ;
+    border: 1.5px solid ;
+    animation: pulse-glow-hover 1.5s infinite ease-in-out;
+    
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
 }
 
 @keyframes pulse-glow{
